@@ -581,3 +581,57 @@ button {
     text-align: left;
   }
 }
+
+
+.live-agent-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
+  gap: 18px;
+  align-items: stretch;
+  margin-top: 24px;
+}
+
+.live-agent-copy,
+.live-agent-widget {
+  border: 1px solid rgba(231, 233, 238, 0.95);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(20px);
+  border-radius: 28px;
+}
+
+.live-agent-copy {
+  padding: 28px;
+}
+
+.live-agent-copy p:last-child {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.65;
+  margin: 12px 0 0;
+}
+
+.section-heading.compact {
+  margin: 0;
+}
+
+.live-agent-widget {
+  min-height: 420px;
+  padding: 18px;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  overflow: hidden;
+}
+
+.live-agent-widget agents-chat-bot-comp {
+  display: block;
+  width: 100%;
+  min-height: 380px;
+}
+
+@media (max-width: 980px) {
+  .live-agent-section {
+    grid-template-columns: 1fr;
+  }
+}

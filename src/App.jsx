@@ -242,6 +242,15 @@ const cases = [
   }
 ];
 
+
+const ziaAgentConfig = JSON.stringify({
+  orgId: '60072127247',
+  entityId: '7583000000014061',
+  customWelcomeMessage:
+    'Hi. I can help evaluate a used car for Honda Cars India. Share the model, year, city, odometer, ownership, and seller asking price.',
+  openChatOnInit: false
+});
+
 function decisionConfig(decision) {
   if (decision === 'BUY') return { className: 'buy', icon: CheckCircle2 };
   if (decision === 'NEGOTIATE') return { className: 'negotiate', icon: TrendingUp };
@@ -324,6 +333,24 @@ function App() {
           <p>Decision engine</p>
           <h2>BUY / NEGOTIATE / REJECT</h2>
           <span>Powered by KB-grounded dealership policy</span>
+        </div>
+      </section>
+
+
+      <section className="live-agent-section">
+        <div className="live-agent-copy">
+          <div className="section-heading compact">
+            <p>Live Zia Agent</p>
+            <h2>Talk to the actual Zia Agent</h2>
+          </div>
+          <p>
+            This embedded ChatKit connects the demo page to your deployed Zia Used Car Profitability Agent. Use it
+            for the live conversational workflow: intake, photo/document upload, inspection reasoning, and final
+            acquisition recommendation.
+          </p>
+        </div>
+        <div className="live-agent-widget">
+          <agents-chat-bot-comp ziaAgents={ziaAgentConfig}></agents-chat-bot-comp>
         </div>
       </section>
 

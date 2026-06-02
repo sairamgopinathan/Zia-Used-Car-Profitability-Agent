@@ -1,23 +1,16 @@
-# Zia Used Car Profitability Agent
+# Zia Used Car Profitability Agent - Chat Only
 
-Vercel-ready React + Vite hackathon demo for Honda Cars India.
+This is a minimal Vercel-ready React + Vite app that shows only the embedded Zoho Zia Agent ChatKit.
 
 ## Deploy on Vercel
 
-1. Upload these files to GitHub.
-2. Import the GitHub repository in Vercel.
-3. Use these settings:
-   - Framework Preset: Vite
-   - Build Command: npm run build
-   - Output Directory: dist
+1. Replace the existing GitHub repo files with these files.
+2. Commit and push to `main`.
+3. Vercel will redeploy automatically.
 
-## Important
+Settings:
+- Framework Preset: Vite
+- Build Command: npm run build
+- Output Directory: dist
 
-Do not upload `node_modules`, `dist`, or old `package-lock.json` files. Vercel will install dependencies during deployment.
-
-## Local run
-
-```bash
-npm install
-npm run dev
-```
+Do not upload `node_modules`, `dist`, or `package-lock.json`.

@@ -1,5 +1,5 @@
 {
-  "name": "zia-used-car-profitability-agent",
+  "name": "zia-used-car-profitability-agent-chat-only",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -11,8 +11,7 @@
   "dependencies": {
     "vite": "5.4.11",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "lucide-react": "0.468.0"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {},
   "engines": {
